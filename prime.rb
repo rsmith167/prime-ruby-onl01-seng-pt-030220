@@ -11,7 +11,7 @@ def prime?(int)
   elsif check_numbers.include?(int)
     return true
   elsif (int > 7 && int.odd?)
-    check_numbers.any? do |check| 
+    check_numbers.each? do |check| 
       if int % check == 0
         return false
       else 
