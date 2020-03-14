@@ -9,7 +9,9 @@ def prime?(int)
   elsif check_numbers.include?(int)
     return true
   elsif int > 7 && int.odd?
-    check_numbers.any? do |check| int/check
+    check_numbers.any? do |check| 
+      int/check
+    end
   end
   
   
