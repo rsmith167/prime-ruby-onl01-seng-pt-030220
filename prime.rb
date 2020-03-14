@@ -13,8 +13,7 @@ def prime?(int)
   elsif (int > 7 && int.odd?)
     check_numbers.any? do |check| 
       int % check == 0
-        
-    end
+        end
   end
   
   
