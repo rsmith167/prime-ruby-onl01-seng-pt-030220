@@ -4,6 +4,8 @@ def prime?(int)
   check_numbers = [2,3,5,7]
   if( int == 0 || int == 1)
     return false
+  elsif int < 0
+  return false
   elsif( int > 2 && int.even?)
     return false
   elsif check_numbers.include?(int)
