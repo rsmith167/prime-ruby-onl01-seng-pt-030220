@@ -14,7 +14,7 @@ def prime?(int)
     check_numbers.any? do |check| 
       if int % check == 0
       return false
-    end
+    
   else return true
     end
   end
