@@ -10,10 +10,12 @@ def prime?(int)
     return false
   elsif check_numbers.include?(int)
     return true
-  elsif int > 7 && int.odd?
+  elsif (int > 7 && int.odd?)
     check_numbers.any? do |check| 
-      int % check == 0
+      if int % check == 0
       return false
+    end
+  else return true
     end
   end
   
